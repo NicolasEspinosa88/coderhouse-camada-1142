@@ -81,9 +81,32 @@
 	background-image: url(assets/pricing-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	display: flex;
+	vertical-align: center;
+	align-items: center;
+}
+.price{
+	padding:0 150px;
+	display: flex;
 }
 
 .pricing-card{
+	border: 1px solid;
 	width: 20%;
+	margin-top: -100px;
+	margin-right: 50px;
 }
 
+.info{
+	color: white;
+	height: 200px;
+	width: 100%;
+	background-color: #142e3f;
+}
+.footer{
+	background-color: #091722;
+}
+
+.copyright{
+	margin: 0;
+}
