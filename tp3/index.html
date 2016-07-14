@@ -4,11 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Trabajo Practico</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header class = "header">
-		<img src="assets/header-logo.png" alt="">
+	<header class = "main-header 	center">
+		<h1 class="logo">
+			<a href="index.html">
+				<img src="assets/header-logo.png" alt="">
+			</a>
+		</h1>
 		<nav class= "nav-bar">
 			<ul>
 				<li class="nav-header"><a href="index.html">home</a></li>
@@ -17,16 +22,22 @@
 		</nav>
 	</header>
 	<main>
-
 		<section class = "banner">
+			<div class="banner-container center">
+				<h1>Regular Updates</h1>
+				<p>Curabitur ultricies elementum mauris eu dui aliquet mauris euismod neque a molestie</p>
+			</div>
+
 		</section>
-		<section class= "search-bar">
-			<form action="search.php" method="POST">
-				<input class="input search-style" type="search" placeholder="Enter your domain name and hit enter">
-				<input class="search search-button" type="submit" value="Search">
-			</form>
+		<section class="center">
+			<div class= "search-bar">
+				<form action="search.php" method="POST">
+					<input class="input search-style" type="search" placeholder="Enter your domain name and hit enter">
+					<input class="search search-button" type="submit" value="Search">
+				</form>
+			</div>
 		</section>
-		<section class= "features">
+		<section class= "features center">
 			<article class="article-horizontal">
 				<figure>
 					<img class="img-article" src="assets/icons/wid1.png" alt="">
@@ -59,7 +70,7 @@
 				<p>A paragraph of text with an A second row of text with a</p>
 			</article>
 		</section>
-		<section class="services">
+		<section class="services center">
 			<header class="services-header">
 				<img src="assets/icons/threedot.png" alt="">
 				<h1>Hostro Services</h1>
