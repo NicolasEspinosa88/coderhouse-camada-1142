@@ -1,4 +1,6 @@
-
+html{
+	font-family: 'Raleway', sans-serif;
+}
 .center{
 	padding: 0 230px;
 }
@@ -140,6 +142,9 @@
 	display:flex;
 }
 
+.pricing{
+	margin-top: -50px;
+}
 
 .pricing-inner{
 	z-index: 1;
@@ -153,19 +158,74 @@
 
 }
 
-.pricing-card{
-	width: 20%;
+.pricing-header h1{
+	text-align: center;
+	font-size:25px;
+	font-weight: bold;
+}
+.price{
+	margin-bottom: 100px;
+}
+
+.price-card{
+	width: 180px;
 	display: inline-block;
-	margin: -20px 10px;
+	margin: -80px 10px;
 	border: 1px solid black;
 }
 
-.pricing-header h1{
-	font-size:35px;
-	font-weight: bold;
+.price-header{
+	margin-top:55px;
+	margin-bottom: 55px;
+	text-align: center;
 }
 
+.price-amount{
+	font-weight: bold;
+	font-size: 35px;
+	margin-top:15px;
+}
+
+.price-amount sup{
+	font-size: 15px;
+}
+
+.price-list{
+	border-spacing: 10px;
+}
+
+.price-button{
+	
+    background-color: #4CAF50;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 22px auto;
+    width: 80%;
+    text-align: center;
+    background: #01AFF3;
+    color: #fff;
+    display: flex;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.description{
+	border: 1px solid black;
+	width: 150px;
+}
+
+.amount{
+	text-align: right;
+	border: 1px solid black;
+	width: 35px;
+}
+
+
 .info{
+	text-align: center;
 	color: white;
 	height: 200px;
 	width: 100%;
