@@ -7,7 +7,7 @@ html{
 
 .header-font{
 	font-size: 25px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .article-font{
@@ -34,6 +34,7 @@ html{
 }
 .main-header{
 	padding-top:20px;
+	margin-bottom: 25px;
 	overflow: auto;
 }
 
@@ -46,10 +47,9 @@ html{
 }
 
 .nav-bar {
-	font-size: 12px;
+	font-size: 10px;
 	float: right;
 }
-
 
 
 .nav-bar li{
@@ -77,8 +77,7 @@ html{
 	height: 450px;
 	background-image: url(assets/indexbanner-bg3.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	margin-top: 15px;
+	background-size: 100vw;
 	position: relative;
 	text-align: center;
 }
@@ -123,7 +122,7 @@ html{
 	font-size: 10px;
 	height: 60px;
 	width: 15%;
-	cursor: pointer;	
+	cursor: pointer;
 }
 
 .features-inner{
@@ -200,8 +199,6 @@ article figure figcaption{
 	height: 400px;
 	z-index: 2;
 }
-
-
 
 .pricing{
 	margin-top: -50px;
@@ -321,34 +318,119 @@ article figure figcaption{
 	color: #02AEF6;
 }
 .footer{
+	font-size: 11px;
 	height: 60px;
 	overflow: auto;
 	color: #fff;
 	background-color: #091722;
 	padding-top: 30px;
 }
+.footer-nav{
+	float: right;
+	font-size: 10px;
+}
+.footer-nav li{
+	padding: 10px;
+	display: inline;
+}
+
+.footer-nav li a{
+	text-decoration: none;
+	color: #B4B7BA;
+}
+
 .copyright{
-	float:left; 
+	float:left;
 }
 
 .contact{
 	height: 370px;
 	display: flex;
 	background-image: url(assets/indexbanner-bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100vw;
 	justify-content: center;
-	flex-direction: column;
 	text-align: center;
 }
 
 .contact-inner{
 	display: flex;
-	background-image: url(assets/indexbanner-bg2.jpg);
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
 }
 
+.contact-inner p{
+	width:400px;
+}
+
 .contact-title{
+	color: #fff;
+	margin: 30px;
 	font-weight: bold;
 	font-size: 34px;
+}
+
+.form{
+	margin: 100px 0 80px 0;
+	height: 300px;
+}
+
+.form-title{
+	margin: 50px 0;
+	text-align: center;
+}
+.form-title h1{
+	margin: 20px 0;
+}
+
+.form-inner form{
+	text-align: center;
+	overflow: auto;
+}
+
+.form-left{
+	width: 50%;
+	float: left;
+}
+
+.form-left input{
+	box-sizing: border-box;
+	border: 0.5px solid #A6A8AD;
+	font-size: 12px;
+	padding: 5.5px;
+	margin: 7px;
+	width: 92%;
+}
+
+.form-right{
+	width: 50%;
+	float: right;
+	overflow: auto;
+}
+
+.form-right textarea{
+	width: 92%;
+	margin: 5px;
+	height: 93px;
+	padding: 9px;
+}
+
+.form-submit{
+	clear: both;
+}
+
+.form-button{
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 22px auto;
+    width: 15%;
+    background: #01AFF3;
+    color: #fff;
+    height: 30px;
+    border-radius: 4px;
 }
