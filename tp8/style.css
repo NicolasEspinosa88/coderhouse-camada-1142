@@ -5,6 +5,11 @@ html {
 .center {
   padding: 0 230px;
 }
+@media only screen and (max-width: 1150px) {
+  .center {
+    padding: 0;
+  }
+}
 
 .header-font {
   font-size: 25px;
@@ -91,6 +96,14 @@ html {
   font-weight: bold;
 }
 
+.search {
+  padding: 0 30px;
+}
+@media only screen and (min-width: 1150px) {
+  .search {
+    padding: 0 230px;
+  }
+}
 .search-bar {
   z-index: 2;
   height: 60px;
@@ -121,14 +134,22 @@ html {
 .features-inner {
   width: 100%;
   text-align: center;
+  margin: 80px 0;
 }
 .features-article {
-  margin: 80px 10px;
+  margin: 0 10px;
   display: inline-block;
   width: 20%;
+  /* Small Devices, Tablets */
 }
 .features-article figcaption {
   margin: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .features-article {
+    margin-top: 20px;
+    width: 40%;
+  }
 }
 .features-image {
   transition: 1.1s ease-in-out;
@@ -180,6 +201,11 @@ html {
 .pricing {
   margin-top: -50px;
 }
+@media only screen and (max-width: 768px) {
+  .pricing {
+    margin-top: 0;
+  }
+}
 .pricing-inner {
   z-index: 1;
   box-sizing: border-box;
@@ -209,11 +235,23 @@ html {
   justify-content: center;
   margin-bottom: 100px;
 }
+@media only screen and (max-width: 768px) {
+  .price {
+    flex-wrap: wrap;
+  }
+}
 .price-card {
   padding: 10px;
   background-color: #fff;
-  width: 160px;
+  width: 20%;
   margin: -80px 10px;
+  /* Small Devices, Tablets */
+}
+@media only screen and (max-width: 768px) {
+  .price-card {
+    margin: 0 10px;
+    width: 40%;
+  }
 }
 .price-card hr {
   border: 1px solid #F7F8F8;
@@ -222,6 +260,11 @@ html {
   margin-top: 55px;
   margin-bottom: 55px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .price-header {
+    margin-bottom: 10px;
+  }
 }
 .price-amount {
   font-weight: bold;
@@ -240,6 +283,11 @@ html {
 }
 .price-list .description {
   width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .price-list .description {
+    text-align: center;
+  }
 }
 .price-list .amount {
   text-align: right;

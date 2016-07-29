@@ -3,11 +3,14 @@ html{
 }
 .center{
 	padding: 0 230px;
+	@media only screen and (max-width: 1150px) {
+		padding: 0;
+	}
 }
 
 .header-font{
 	font-size: 25px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .article-font{
@@ -88,6 +91,12 @@ html{
 	}
 }
 .search{
+
+	@media only screen and (min-width: 1150px) {
+		padding: 0 230px;
+	}
+
+	padding: 0 30px;
 	&-bar{
 		z-index: 2;
 		height: 60px;
@@ -121,14 +130,20 @@ html{
 	&-inner{
 		width: 100%;
 		text-align:center;
+		margin: 80px 0;
 	}
 	&-article{
-		margin: 80px 10px ;
+		margin: 0 10px ;
 		display: inline-block;
 		width: 20%;
 		figcaption{
 			margin:20px 0;
 		}
+		/* Small Devices, Tablets */
+	    @media only screen and (max-width : 768px) {
+	    	margin-top: 20px;
+			width: 40%;
+	    }
 
 	}
 	&-image{
@@ -185,6 +200,10 @@ html{
 .pricing{
 	margin-top: -50px;
 
+	@media only screen and (max-width : 768px) {
+    	margin-top: 0;
+    }
+
 	&-inner{
 		z-index: 1;
 		box-sizing: border-box;
@@ -207,7 +226,7 @@ html{
 		p{
 			font-size: 13px;
 			line-height: 17px;
-			color:#A3A4A6;	
+			color:#A3A4A6;
 		}
 
 	}
@@ -217,11 +236,19 @@ html{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 100px;
+	@media only screen and (max-width : 768px) {
+	    	flex-wrap: wrap;
+	    }
 	&-card{
 		padding: 10px;
 		background-color: #fff;
-		width: 160px;
+		width: 20%;
 		margin: -80px 10px;
+		/* Small Devices, Tablets */
+	    @media only screen and (max-width : 768px) {
+	    	margin: 0 10px;
+			width: 40%;
+	    }
 		hr{
 			border: 1px solid #F7F8F8;
 		}
@@ -230,6 +257,9 @@ html{
 		margin-top:55px;
 		margin-bottom: 55px;
 		text-align: center;
+		@media only screen and (max-width : 768px) {
+	    	margin-bottom: 10px;
+	    }
 	}
 	&-amount{
 		font-weight: bold;
@@ -247,6 +277,9 @@ html{
 		}
 		.description{
 			width: 150px;
+			@media only screen and (max-width : 768px) {
+	    	text-align: center;
+	    	}
 		}
 
 		.amount{
