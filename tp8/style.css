@@ -180,9 +180,6 @@ html {
   margin: auto;
   display: flex;
 }
-.services-div {
-  margin: auto;
-}
 .services-article {
   margin: 15px;
   overflow: auto;

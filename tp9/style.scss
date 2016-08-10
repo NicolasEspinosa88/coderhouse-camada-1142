@@ -1,6 +1,9 @@
-$scree-md-max:1170px;
-$screen-sm-max: 970px;
-
+$screen-md-max:1200px;
+$screen-sm-max: 992px;
+$screen-xs-max: 768px;
+*{
+	box-sizing:border-box;
+}
 html{
 	font-family: 'Raleway', sans-serif;
 }
@@ -36,11 +39,17 @@ html{
 .main-header{
 	padding-top:20px;
 	overflow: auto;
+	@media only screen and (max-width : $screen-sm-max) {
+		text-align:center;    
+	}
 }
 
 .logo{
 	margin:0;
 	float:left;
+	@media only screen and (max-width : $screen-sm-max) {
+		float:none;    
+	}
 	&-image{
 		height: 17px;
 	}
@@ -50,9 +59,15 @@ html{
 	padding:15px;
 	font-size: 10px;
 	float: right;
+	@media only screen and (max-width : $screen-sm-max) {
+		float:none;    
+	}
 	li{
 		padding: 10px;
 		display: inline;
+		@media only screen and (max-width : $screen-sm-max) {
+			display: block;
+		}
 		a{
 			text-decoration: none;
 			text-transform: uppercase;
@@ -76,7 +91,9 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	
+	@media only screen and (max-width : $screen-sm-max) {
+	    display: none;
+	}
 	&-container{
 		padding-top:10%;
 		color:#fff;		
@@ -88,6 +105,9 @@ html{
 		z-index: 2;
 		margin-top: -30px;
 		background-color: #fff;
+		@media only screen and (max-width : $screen-sm-max) {
+	    		margin-top: 0;
+		}
 		form{
 			display: flex;
 			width: 100%;
@@ -113,11 +133,7 @@ html{
 		figcaption{
 			margin:20px 0;
 		}
-		/* Small Devices, Tablets */
-	    @media only screen and (max-width : 768px) {
-	    	margin-top: 20px;
-			width: 40%;
-	    }
+		
 
 	}
 	&-image{
@@ -139,17 +155,27 @@ html{
 		}
 		p{
 			margin-bottom: 40px;
+
 		}
 	}
 	&-figure{
 		overflow: auto;
+		img{
+		    @media only screen and (max-width : $screen-sm-max) {
+	    		text-align: left;
+	    		float: left;
+	    	}
+		}
 		figcaption{
 		    margin: 10px 20px;
+		    @media only screen and (max-width : $screen-sm-max) {
+	    		text-align: left;
+	    		float: left;
+	    	}
 		}
 	}
 	&-inner{
-		display:flex;
-		justify-content: center;
+		margin: auto;
 	}
 	&-div{
 		text-align: center;
@@ -159,6 +185,10 @@ html{
 	    overflow: auto;
 	    p{
 	        margin: 5px 50px;
+	        @media only screen and (max-width : $screen-sm-max) {
+	    		text-align: left;
+	    		float: left;
+	    	}
 	    }
 	}
 	&-image{
@@ -174,9 +204,7 @@ html{
 .pricing{
 	margin-top: -50px;
 
-	@media only screen and (max-width : 768px) {
-    	margin-top: 0;
-    }
+	
 
 	&-inner{
 		z-index: 1;
@@ -185,12 +213,10 @@ html{
 		background-image: url(assets/pricing-bg.jpg);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		text-align: center;
+		width: 100%;
 	}
 	&-header{
+		padding-top: 100px;
 		h1{
 			text-align: center;
 			font-size:25px;
@@ -198,6 +224,7 @@ html{
 			margin-bottom: 15px;
 		}
 		p{
+			text-align: center;
 			font-size: 13px;
 			line-height: 17px;
 			color:#A3A4A6;
@@ -207,21 +234,24 @@ html{
 }
 
 .price{
-	display: flex;
-	justify-content: center;
+	
 	margin-bottom: 100px;
-	@media only screen and (max-width : 768px) {
-	    	flex-wrap: wrap;
-	    }
+	
 	&-card{
+		
+		overflow: auto;
 		text-align: center;
-		padding: 10px;
-		background-color: #fff;
-		margin: -80px 10px;
-		/* Small Devices, Tablets */
-	    @media only screen and (max-width : 768px) {
-	    	margin: 0 10px;
-			width: 40%;
+		margin: -80px 0;
+
+		@media only screen and (max-width : $screen-md-max) {
+	    		text-align: center;
+	    		margin: 20px 0;
+	    		float: left;
+	    }
+	    &-inner{
+			background-color: #fff;
+	    	padding: 2px;
+	    	box-shadow: 0.3px 0.3px 10px #888888;
 	    }
 		hr{
 			border: 1px solid #F7F8F8;
@@ -231,9 +261,6 @@ html{
 		margin-top:55px;
 		margin-bottom: 55px;
 		text-align: center;
-		@media only screen and (max-width : 768px) {
-	    	margin-bottom: 10px;
-	    }
 	}
 	&-amount{
 		font-weight: bold;
@@ -252,9 +279,6 @@ html{
 		}
 		.description{
 			width: 150px;
-			@media only screen and (max-width : 768px) {
-	    	text-align: center;
-	    	}
 		}
 
 		.amount{
@@ -301,9 +325,16 @@ html{
 	color: #fff;
 	background-color: #091722;
 	padding-top: 30px;
+	@media only screen and (max-width : $screen-sm-max) {
+		text-align:center;
+		padding-top: 10px;   
+	}
 	&-nav{
 		float: right;
 		font-size: 10px;
+		@media only screen and (max-width : $screen-sm-max) {
+			float:none;    
+		}
 		li{
 			padding: 10px;
 			display: inline;
@@ -315,6 +346,9 @@ html{
 	}
 	.copyright{
 		float:left; 
+		@media only screen and (max-width : $screen-sm-max) {
+			float:none;    
+		}
 	}
 }
 

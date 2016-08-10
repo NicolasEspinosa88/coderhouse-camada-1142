@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Raleway', sans-serif;
 }
@@ -34,10 +38,20 @@ html {
   padding-top: 20px;
   overflow: auto;
 }
+@media only screen and (max-width: 992px) {
+  .main-header {
+    text-align: center;
+  }
+}
 
 .logo {
   margin: 0;
   float: left;
+}
+@media only screen and (max-width: 992px) {
+  .logo {
+    float: none;
+  }
 }
 .logo-image {
   height: 17px;
@@ -48,9 +62,19 @@ html {
   font-size: 10px;
   float: right;
 }
+@media only screen and (max-width: 992px) {
+  .nav-bar {
+    float: none;
+  }
+}
 .nav-bar li {
   padding: 10px;
   display: inline;
+}
+@media only screen and (max-width: 992px) {
+  .nav-bar li {
+    display: block;
+  }
 }
 .nav-bar li a {
   text-decoration: none;
@@ -75,6 +99,11 @@ html {
   background-size: cover;
   text-align: center;
 }
+@media only screen and (max-width: 992px) {
+  .banner {
+    display: none;
+  }
+}
 .banner-container {
   padding-top: 10%;
   color: #fff;
@@ -87,6 +116,11 @@ html {
   z-index: 2;
   margin-top: -30px;
   background-color: #fff;
+}
+@media only screen and (max-width: 992px) {
+  .search-bar {
+    margin-top: 0;
+  }
 }
 .search-bar form {
   display: flex;
@@ -108,16 +142,9 @@ html {
 }
 .features-article {
   text-align: center;
-  /* Small Devices, Tablets */
 }
 .features-article figcaption {
   margin: 20px 0;
-}
-@media only screen and (max-width: 768px) {
-  .features-article {
-    margin-top: 20px;
-    width: 40%;
-  }
 }
 .features-image {
   transition: 1.1s ease-in-out;
@@ -141,12 +168,23 @@ html {
 .services-figure {
   overflow: auto;
 }
+@media only screen and (max-width: 992px) {
+  .services-figure img {
+    text-align: left;
+    float: left;
+  }
+}
 .services-figure figcaption {
   margin: 10px 20px;
 }
+@media only screen and (max-width: 992px) {
+  .services-figure figcaption {
+    text-align: left;
+    float: left;
+  }
+}
 .services-inner {
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
 .services-div {
   text-align: center;
@@ -157,6 +195,12 @@ html {
 }
 .services-article p {
   margin: 5px 50px;
+}
+@media only screen and (max-width: 992px) {
+  .services-article p {
+    text-align: left;
+    float: left;
+  }
 }
 .services-image {
   height: 35px;
@@ -169,11 +213,6 @@ html {
 .pricing {
   margin-top: -50px;
 }
-@media only screen and (max-width: 768px) {
-  .pricing {
-    margin-top: 0;
-  }
-}
 .pricing-inner {
   z-index: 1;
   box-sizing: border-box;
@@ -181,10 +220,10 @@ html {
   background-image: url(assets/pricing-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  width: 100%;
+}
+.pricing-header {
+  padding-top: 100px;
 }
 .pricing-header h1 {
   text-align: center;
@@ -193,33 +232,31 @@ html {
   margin-bottom: 15px;
 }
 .pricing-header p {
+  text-align: center;
   font-size: 13px;
   line-height: 17px;
   color: #A3A4A6;
 }
 
 .price {
-  display: flex;
-  justify-content: center;
   margin-bottom: 100px;
 }
-@media only screen and (max-width: 768px) {
-  .price {
-    flex-wrap: wrap;
-  }
-}
 .price-card {
+  overflow: auto;
   text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  margin: -80px 10px;
-  /* Small Devices, Tablets */
+  margin: -80px 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .price-card {
-    margin: 0 10px;
-    width: 40%;
+    text-align: center;
+    margin: 20px 0;
+    float: left;
   }
+}
+.price-card-inner {
+  background-color: #fff;
+  padding: 2px;
+  box-shadow: 0.3px 0.3px 10px #888888;
 }
 .price-card hr {
   border: 1px solid #F7F8F8;
@@ -228,11 +265,6 @@ html {
   margin-top: 55px;
   margin-bottom: 55px;
   text-align: center;
-}
-@media only screen and (max-width: 768px) {
-  .price-header {
-    margin-bottom: 10px;
-  }
 }
 .price-amount {
   font-weight: bold;
@@ -252,11 +284,6 @@ html {
 }
 .price-list .description {
   width: 150px;
-}
-@media only screen and (max-width: 768px) {
-  .price-list .description {
-    text-align: center;
-  }
 }
 .price-list .amount {
   text-align: right;
@@ -298,9 +325,20 @@ html {
   background-color: #091722;
   padding-top: 30px;
 }
+@media only screen and (max-width: 992px) {
+  .footer {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
 .footer-nav {
   float: right;
   font-size: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .footer-nav {
+    float: none;
+  }
 }
 .footer-nav li {
   padding: 10px;
@@ -312,6 +350,11 @@ html {
 }
 .footer .copyright {
   float: left;
+}
+@media only screen and (max-width: 992px) {
+  .footer .copyright {
+    float: none;
+  }
 }
 
 .contact {
